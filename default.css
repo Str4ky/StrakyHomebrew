@@ -5,4 +5,139 @@ body {
 	background-image: url("background.png");
     font-size: 30px;
     text-align: center;
+	text-decoration: none;
+}
+
+img{
+text-decoration: none;
+}
+
+a{
+text-decoration: none;
+}
+
+.button {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: #47d150;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2 {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: #7289DA;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2:hover {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	background-color: #8EA5E2;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+.logo {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30%;
+	margin-right: 34%;
+    height: 90px;
+}
+
+.youtube {
+	text-decoration: none;
+	color: #ffffff;
+	transition: all .2s ease-in-out;
+}
+
+.youtube:hover {
+	transform: scale(1.35);
+	color: #FF3838;
+}
+
+.twitter {
+	text-decoration: none;
+	color: #ffffff;
+	transition: all .2s ease-in-out;
+}
+
+.twitter:hover {
+	transform: scale(1.35);
+	color: #3FCFFF;
+}
+
+.twitch{
+	text-decoration: none;
+	color: #ffffff;
+	transition: all .2s ease-in-out;
+}
+
+.twitch:hover {
+	transform: scale(1.35);
+	color: #9147FF;
+}
+
+.soundcloud{
+	text-decoration: none;
+	color: #ffffff;
+	transition: all .2s ease-in-out;
+}
+
+.soundcloud:hover {
+	transform: scale(1.35);
+	color: #FF671C;
+}
+
+.discord {
+	text-decoration: none;
+	color: #ffffff;
+	transition: all .2s ease-in-out;
+}
+
+.discord:hover {
+	transform: scale(1.35);
+	color: #7289DA;
 }

@@ -1,93 +1,97 @@
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Les chroniques de l'homebrew</title>
-		<link rel="stylesheet" href="default2.css"/>
-		<link rel="icon" type="image/png" href="weblogo.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
 
-	<style>
-		html {
-  scroll-behavior: smooth;
-}
+<head>
+    <meta charset="utf-8" />
+    <title>Les chroniques de l'homebrew</title>
+    <link rel="stylesheet" href="default.css" />
+    <link rel="icon" type="image/png" href="weblogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-#myBtn {
-transition-duration: 0.4s;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #0060BA;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-#myBtn:hover {
-transition-duration: 0.4s;
-  background-color: #3487C5;
-}
-
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    #myBtn {
+        transition-duration: 0.4s;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #0060BA;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    #myBtn:hover {
+        transition-duration: 0.4s;
+        background-color: #3487C5;
+    }
 </style>
 
-    <body>
-	
-	<button onclick="topFunction()" id="myBtn" title="Retourner en haut">Retourner en haut</button>
-	
-		<img src="logo.png" alt="Logo"/></br>
-		<h2></h2>
-		<img src="ressources.png" alt="Ressources"/></br><br>
-		
-		<a href="index.html" class="button2">Retour à l'accueil</a><br><br>
-		
-		<a href="wbfstoiso_setup.exe"><b>WBFS to ISO (Wii)</b></a><br><br>
-		<a href="isotowbfs_setup.exe"><b>ISO to WBFS (Wii)</b></a><br><br>
-		<a href="Theme VWII.zip"><b>Theme VWii (Wii U)</b></a><br><br>
-		<a href="DS Scene Rom Tool.zip"><b>DS Scene Rom Tool (DSi, 3DS)</b></a><br><br>
-		<a href="EveryFileExplorer.zip"><b>Every File Explorer</b><br>
-		<b>(DSi, 3DS, Wii, Wii U)</b></a><br><br>
-		<a href="FontConverter.zip"><b>FontConverter (3DS)</b></a><br><br>
-		<a href="FontTool-master.zip"><b>FontTool (3DS)</b></a><br><br>
-		<a href="Kuriimu.zip"><b>Kuriimu (3DS)</b></a><br><br>
-		<a href="MakeAnim.zip"><b>MakeAnim (3DS)</b></a><br><br>
-		<a href="MsbtEditor.zip"><b>MsbtEditor (3DS)</b></a><br><br>
-		<a href="3DS-Title-Manager-master.zip"><b>3DS Title Manager (3DS)</b></a><br><br>
-		<a href="CIA Converter.zip"><b>CIA Converter (3DS)</b></a><br><br>
-		<a href="VideoConverterCIA.zip"><b>VideoConverterCIA (3DS)</b></a><br><br>
-		<a href="bcwav_tool.zip"><b>Bcwav Tool (3DS)</b></a><br><br>
-		<a href="Theme Editor.zip"><b>Theme Editor (3DS)</b></a><br><br>
-		<a href="Ohana3DS.zip"><b>Ohana3DS (3DS)</b></a><br><br>
-		<a href="NUS3BANK-Editor-master.zip"><b>Nus3dbank Editor (3DS)</b></a><br><br>
-		<a href="Sarc Tool.zip"><b>Sarc Tool (3DS)</b></a><br><br>
-		<a href="Wexo's Toolbox.zip"><b>Wexo's Toolbox (3DS)</b></a><br><br>
-		<a href="3DS_Banner_Maker-master.zip"><b>3DS Banner Maker (3DS)</b></a><br><br>
-		<a href="3DS Decryptor.zip"><b>3DS Rom Decryptor (3DS)</b></a>
-    </body>
-			<script>
-		var mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+<body>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-		</script>
+    <button onclick="topFunction()" id="myBtn" title="Retourner en haut">Retourner en haut</button>
+
+    <img src="logo.png" alt="Logo" /></br>
+    <h2></h2>
+    <img src="ressources.png" alt="Ressources" /></br><br>
+
+    <a href="index.html" class="button2">Retour à l'accueil</a><br><br>
+
+    <a href="wbfstoiso_setup.exe"><b>WBFS to ISO (Wii)</b></a><br><br>
+    <a href="isotowbfs_setup.exe"><b>ISO to WBFS (Wii)</b></a><br><br>
+    <a href="Theme VWII.zip"><b>Theme VWii (Wii U)</b></a><br><br>
+    <a href="DS Scene Rom Tool.zip"><b>DS Scene Rom Tool (DSi, 3DS)</b></a><br><br>
+    <a href="EveryFileExplorer.zip"><b>Every File Explorer</b><br>
+		<b>(DSi, 3DS, Wii, Wii U)</b></a><br><br>
+    <a href="FontConverter.zip"><b>FontConverter (3DS)</b></a><br><br>
+    <a href="FontTool-master.zip"><b>FontTool (3DS)</b></a><br><br>
+    <a href="Kuriimu.zip"><b>Kuriimu (3DS)</b></a><br><br>
+    <a href="MakeAnim.zip"><b>MakeAnim (3DS)</b></a><br><br>
+    <a href="MsbtEditor.zip"><b>MsbtEditor (3DS)</b></a><br><br>
+    <a href="3DS-Title-Manager-master.zip"><b>3DS Title Manager (3DS)</b></a><br><br>
+    <a href="CIA Converter.zip"><b>CIA Converter (3DS)</b></a><br><br>
+    <a href="VideoConverterCIA.zip"><b>VideoConverterCIA (3DS)</b></a><br><br>
+    <a href="bcwav_tool.zip"><b>Bcwav Tool (3DS)</b></a><br><br>
+    <a href="Theme Editor.zip"><b>Theme Editor (3DS)</b></a><br><br>
+    <a href="Ohana3DS.zip"><b>Ohana3DS (3DS)</b></a><br><br>
+    <a href="NUS3BANK-Editor-master.zip"><b>Nus3dbank Editor (3DS)</b></a><br><br>
+    <a href="Sarc Tool.zip"><b>Sarc Tool (3DS)</b></a><br><br>
+    <a href="Wexo's Toolbox.zip"><b>Wexo's Toolbox (3DS)</b></a><br><br>
+    <a href="3DS_Banner_Maker-master.zip"><b>3DS Banner Maker (3DS)</b></a><br><br>
+    <a href="3DS Decryptor.zip"><b>3DS Rom Decryptor (3DS)</b></a>
+</body>
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </html>

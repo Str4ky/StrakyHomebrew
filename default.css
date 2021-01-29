@@ -3,6 +3,7 @@ body {
     color:#FFFFFF;
     background-color: rgb(64, 160, 255);
 	background-image: url("background.png");
+	background-attachment: fixed;
     font-size: 30px;
     text-align: center;
 	text-decoration: none;
@@ -140,4 +141,10 @@ text-decoration: none;
 .discord:hover {
 	transform: scale(1.35);
 	color: #7289DA;
+}
+
+.video {
+    border-radius: 12px;
+    box-shadow: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

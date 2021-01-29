@@ -1,147 +1,210 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Les chroniques de l'homebrew</title>
-		<link rel="stylesheet" href="default2.css"/>
-		<link rel="icon" type="image/png" href="weblogo.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-	
-	<style>
-		html {
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
+<head>
+    <meta charset="utf-8" />
+    <title>Les chroniques de l'homebrew</title>
+    <link rel="stylesheet" href="default.css" />
+    <link rel="icon" type="image/png" href="weblogo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-#myBtn {
-transition-duration: 0.4s;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #0060BA;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 8px;
-}
-
-#myBtn:hover {
-transition-duration: 0.4s;
-  background-color: #3487C5;
-}
-
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    #myBtn {
+        transition-duration: 0.4s;
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #0060BA;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    #myBtn:hover {
+        transition-duration: 0.4s;
+        background-color: #3487C5;
+    }
 </style>
 
-    <body>
-	
-	<button onclick="topFunction()" id="myBtn" title="Retourner en haut">Retourner en haut</button>
-	
-		<img src="logo.png" alt="Logo"/></br>
-		<img src="faq.png" alt="logo FAQ"/><br><br>
-		<a href="index.html" class="button2">Retour à l'accueil</a><br><br>
-		<h5><span style="text-decoration: underline;">Choisis une console</span> :</h5><br>
-		<a href="#dsi" style="text-decoration:none"><img src="dsi_icon.png" alt="DSi"/></a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#3ds"style="text-decoration:none"><img src="3ds_icon.png" alt="3DS"/></a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#wii"style="text-decoration:none"><img src="wii_icon.png" alt="Wii"/></a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="#wiiu"style="text-decoration:none"><img src="wiiu_icon.png" alt="Wii U"/></a><br><br>
-		
-		<h3 id="dsi"><span style="text-decoration: underline;">FAQ sur la DSi</span> :</h3>
-				<central><h4>Est-ce que ma DSi peut être cassée ? (brick)</h4></central><br />
-				<central>➤ Ça peut arriver, mais moi, dans mon expérience,</central><br />
-				<central>aucune console que je hackais n'était brick</central><br />
-				<central><h4>Est-ce que je peux me faire avoir par Nintendo ?</h4></central><br />
-				<central>➤ La DSi étant morte, non</central><br />
-				<central><h4>Est-il facile de déhacker une console ?</h4></central><br />
-				<central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
-				<central><h4>Le hack fonctionne-t-il sur toutes versions de console ?</h4></central><br />
-				<central>➤ Oui, il faut juste trouver le bon tutoriel comme les miens</central><br />
-				<central><h4>J'aimerais déhacker ma console mais aussi garder les jeux ou autres</central><br />
-				<central>obtenues grâce à la modification, est-ce que c'est possible ?</h4></central><br />
-				<central>➤ Pour les jeu c'est pas trop possible, idem pour le reste</central><br />
-				<central><h4>Les interactions avec les console qui ne sont pas hackées sont possible ?</h4></central><br />
-				<central>➤ Tout à fait, jeux, autres. Tout est fonctionnel</central><br />
-				<central><h4>Où pourai-je trouver des applications de type Homebrew ?</h4></central><br />
-				<central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
-				<central>est de se rendre sur internet (Google)</central><br />
-		<h3 id="3ds"><span style="text-decoration: underline;">FAQ sur la 3DS</span> :</h3>
-				<central><h4>Est-ce que ma 3DS peut être cassée ? (brick)</h4></central><br />
-				<central>➤ Ça peut arriver, mais moi, dans mon expérience,</central><br />
-				<central>aucune consoles que je hackais n'était brick</central><br />
-				<central><h4>Est-ce que je peux me faire avoir par Nintendo ?</h4></central><br />
-				<central>➤ C'est arrivé qu'une fois avec des bannissement de l'utilisateur des</central><br />
-				<central>services internet de la console, mais il est facile de se débannir</central><br />
-				<central><h4>Est-il facile de déhacker une console ?</h4></central><br />
-				<central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
-				<central><h4>Le hack fonctionne-t-il sur toutes versions de console ?</h4></central><br />
-				<central>➤ Oui, il faut juste trouver le bon tutoriel et certains sont parfois payant,</central><br />
-				<central>ceux que je propose ici sont totalement gratuit et facile à mettre en place</central><br />
-				<central><h4>J'aimerais déhacker ma console mais aussi garder les jeux, thèmes,</central><br />
-				<central>pièces de jeu obtenues grâce à la modification, est-ce que c'est possible ?</h4></central><br />
-				<central>➤ Pour les pièces de jeu, oui. Pour les thèmes, je pense aussi mais j'en suis pas sûr</central><br />
-				<central>Pour les jeux, il me semble que non, c'est sur la carte SD et non sur la console</central><br />
-				<central><h4>Les interactions avec les console qui ne sont pas hackées sont possible ?</h4></central><br />
-				<central>➤ Tout à fait, jeux, streetpass, autres. Tout est fonctionnel</central><br />
-				<central><h4>Où pourai-je trouver des applications de type Homebrew ?</h4></central><br />
-				<central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
-				<central>est de se rendre sur <a href="https://tinydb.eiphax.tech" target="_blank">ce site</a></central><br />
-		<h3 id="wii"><span style="text-decoration: underline;">FAQ sur la Wii</span> :</h3>
-				<central><h4>Est-ce que ma Wii peut être cassée ? (brick)</h4></central><br />
-				<central>➤ Généralement non, jamais vu de problèmes comme ça,</central><br />
-				<central>mais rien n'est impossible, faites attention</central><br />
-				<central><h4>Est-ce que je peux me faire avoir par Nintendo ?</h4></central><br />
-				<central>➤ La Wii étant morte, non</central><br />
-				<central><h4>Est-il facile de déhacker une console ?</h4></central><br />
-				<central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
-				<central><h4>Le hack fonctionne-t-il sur toutes version de console ?</h4></central><br />
-				<central>➤ Oui, il faut juste trouver le bon tutoriel comme les miens</central><br />
-				<central><h4>J'aimerais déhacker ma console mais aussi garder les jeux ou autres</central><br />
-				<central>obtenues grâce à la modification, est-ce que c'est possible ?</h4></central><br />
-				<central>➤ Pour les thèmes, je sais pas mais pour les jeux, impossible</central><br />
-				<central><h4>Les interactions avec les console qui ne sont pas hacké sont possible ?</h4></central><br />
-				<central>➤ Tout à fait, jeux, autres. Tout est fonctionnel</central><br />
-				<central><h4>Où pourai-je trouver des applications de type Homebrew ?</h4></central><br />
-				<central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
-				<central>est de se rendre sur l'homebrew browser (cherchez sur internet)</central><br />
-		<h3 id="wiiu"><span style="text-decoration: underline;">FAQ sur la Wii U</span> :</h3>
-				<central><h4>Est-ce que ma Wii U peut être cassée ? (brick)</h4></central><br />
-				<central>➤ Ça peut arriver, mais moi, dans mon expérience,</central><br />
-				<central>aucune console que je hackais n'était brick</central><br />
-				<central><h4>Est-ce que je peux me faire avoir par Nintendo ?</h4></central><br />
-				<central>➤ C'est jamais arrivé à ce que je sache</central><br />
-				<central><h4>Est-il facile de déhacker une console ?</h4></central><br />
-				<central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
-				<central><h4>Le hack fonctionne-t-il sur toutes versions de console ?</h4></central><br />
-				<central>➤ Oui, il faut juste trouver le bon tutoriel comme les miens</central><br />
-				<central><h4>J'aimerais déhacker ma console mais aussi garder les jeux ou autres</central><br />
-				<central>obtenues grâce à la modification, est-ce que c'est possible ?</h4></central><br />
-				<central>➤ Pour les jeu, possible. Pour le reste, je ne sais pas</central><br />
-				<central><h4>Les interactions avec les console qui ne sont pas hackées sont possible ?</h4></central><br />
-				<central>➤ Tout à fait, jeux, autres. Tout est fonctionnel</central><br />
-				<central><h4>Où pourai-je trouver des applications de type Homebrew ?</h4></central><br />
-				<central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
-				<central>est de se rendre sur l'homebrew appstore</central><br />
-		</body>
-		<script>
-		var mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
+<body>
 
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-		</script>
+    <button onclick="topFunction()" id="myBtn" title="Retourner en haut">Retourner en haut</button>
+
+    <img src="logo.png" alt="Logo" /></br>
+    <img src="faq.png" alt="logo FAQ" /><br><br>
+    <a href="index.html" class="button2">Retour à l'accueil</a><br><br>
+    <h5><span style="text-decoration: underline;">Choisis une console</span> :</h5><br>
+    <a href="#dsi" style="text-decoration:none"><img src="dsi_icon.png" alt="DSi" /></a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="#3ds" style="text-decoration:none"><img src="3ds_icon.png" alt="3DS" /></a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="#wii" style="text-decoration:none"><img src="wii_icon.png" alt="Wii" /></a> &nbsp; &nbsp; &nbsp; &nbsp;
+    <a href="#wiiu" style="text-decoration:none"><img src="wiiu_icon.png" alt="Wii U" /></a><br><br>
+
+    <h3 id="dsi"><span style="text-decoration: underline;">FAQ sur la DSi</span> :</h3>
+    <central>
+        <h4>Est-ce que ma DSi peut être cassée ? (brick)</h4>
+    </central><br />
+    <central>➤ Ça peut arriver, mais moi, dans mon expérience,</central><br />
+    <central>aucune console que je hackais n'était brick</central><br />
+    <central>
+        <h4>Est-ce que je peux me faire avoir par Nintendo ?</h4>
+    </central><br />
+    <central>➤ La DSi étant morte, non</central><br />
+    <central>
+        <h4>Est-il facile de déhacker une console ?</h4>
+    </central><br />
+    <central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
+    <central>
+        <h4>Le hack fonctionne-t-il sur toutes versions de console ?</h4>
+    </central><br />
+    <central>➤ Oui, il faut juste trouver le bon tutoriel comme les miens</central><br />
+    <central>
+        <h4>J'aimerais déhacker ma console mais aussi garder les jeux ou autres</central><br />
+    <central>obtenues grâce à la modification, est-ce que c'est possible ?</h4>
+    </central><br />
+    <central>➤ Pour les jeu c'est pas trop possible, idem pour le reste</central><br />
+    <central>
+        <h4>Les interactions avec les console qui ne sont pas hackées sont possible ?</h4>
+    </central><br />
+    <central>➤ Tout à fait, jeux, autres. Tout est fonctionnel</central><br />
+    <central>
+        <h4>Où pourai-je trouver des applications de type Homebrew ?</h4>
+    </central><br />
+    <central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
+    <central>est de se rendre sur internet (Google)</central><br />
+    <h3 id="3ds"><span style="text-decoration: underline;">FAQ sur la 3DS</span> :</h3>
+    <central>
+        <h4>Est-ce que ma 3DS peut être cassée ? (brick)</h4>
+    </central><br />
+    <central>➤ Ça peut arriver, mais moi, dans mon expérience,</central><br />
+    <central>aucune consoles que je hackais n'était brick</central><br />
+    <central>
+        <h4>Est-ce que je peux me faire avoir par Nintendo ?</h4>
+    </central><br />
+    <central>➤ C'est arrivé qu'une fois avec des bannissement de l'utilisateur des</central><br />
+    <central>services internet de la console, mais il est facile de se débannir</central><br />
+    <central>
+        <h4>Est-il facile de déhacker une console ?</h4>
+    </central><br />
+    <central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
+    <central>
+        <h4>Le hack fonctionne-t-il sur toutes versions de console ?</h4>
+    </central><br />
+    <central>➤ Oui, il faut juste trouver le bon tutoriel et certains sont parfois payant,</central><br />
+    <central>ceux que je propose ici sont totalement gratuit et facile à mettre en place</central><br />
+    <central>
+        <h4>J'aimerais déhacker ma console mais aussi garder les jeux, thèmes,</central><br />
+    <central>pièces de jeu obtenues grâce à la modification, est-ce que c'est possible ?</h4>
+    </central><br />
+    <central>➤ Pour les pièces de jeu, oui. Pour les thèmes, je pense aussi mais j'en suis pas sûr</central><br />
+    <central>Pour les jeux, il me semble que non, c'est sur la carte SD et non sur la console</central><br />
+    <central>
+        <h4>Les interactions avec les console qui ne sont pas hackées sont possible ?</h4>
+    </central><br />
+    <central>➤ Tout à fait, jeux, streetpass, autres. Tout est fonctionnel</central><br />
+    <central>
+        <h4>Où pourai-je trouver des applications de type Homebrew ?</h4>
+    </central><br />
+    <central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
+    <central>est de se rendre sur <a href="https://tinydb.eiphax.tech" target="_blank">ce site</a></central><br />
+    <h3 id="wii"><span style="text-decoration: underline;">FAQ sur la Wii</span> :</h3>
+    <central>
+        <h4>Est-ce que ma Wii peut être cassée ? (brick)</h4>
+    </central><br />
+    <central>➤ Généralement non, jamais vu de problèmes comme ça,</central><br />
+    <central>mais rien n'est impossible, faites attention</central><br />
+    <central>
+        <h4>Est-ce que je peux me faire avoir par Nintendo ?</h4>
+    </central><br />
+    <central>➤ La Wii étant morte, non</central><br />
+    <central>
+        <h4>Est-il facile de déhacker une console ?</h4>
+    </central><br />
+    <central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
+    <central>
+        <h4>Le hack fonctionne-t-il sur toutes version de console ?</h4>
+    </central><br />
+    <central>➤ Oui, il faut juste trouver le bon tutoriel comme les miens</central><br />
+    <central>
+        <h4>J'aimerais déhacker ma console mais aussi garder les jeux ou autres</central><br />
+    <central>obtenues grâce à la modification, est-ce que c'est possible ?</h4>
+    </central><br />
+    <central>➤ Pour les thèmes, je sais pas mais pour les jeux, impossible</central><br />
+    <central>
+        <h4>Les interactions avec les console qui ne sont pas hacké sont possible ?</h4>
+    </central><br />
+    <central>➤ Tout à fait, jeux, autres. Tout est fonctionnel</central><br />
+    <central>
+        <h4>Où pourai-je trouver des applications de type Homebrew ?</h4>
+    </central><br />
+    <central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
+    <central>est de se rendre sur l'homebrew browser (cherchez sur internet)</central><br />
+    <h3 id="wiiu"><span style="text-decoration: underline;">FAQ sur la Wii U</span> :</h3>
+    <central>
+        <h4>Est-ce que ma Wii U peut être cassée ? (brick)</h4>
+    </central><br />
+    <central>➤ Ça peut arriver, mais moi, dans mon expérience,</central><br />
+    <central>aucune console que je hackais n'était brick</central><br />
+    <central>
+        <h4>Est-ce que je peux me faire avoir par Nintendo ?</h4>
+    </central><br />
+    <central>➤ C'est jamais arrivé à ce que je sache</central><br />
+    <central>
+        <h4>Est-il facile de déhacker une console ?</h4>
+    </central><br />
+    <central>➤ Oui mais je ne me suis pas encore penché sur le sujet</central><br />
+    <central>
+        <h4>Le hack fonctionne-t-il sur toutes versions de console ?</h4>
+    </central><br />
+    <central>➤ Oui, il faut juste trouver le bon tutoriel comme les miens</central><br />
+    <central>
+        <h4>J'aimerais déhacker ma console mais aussi garder les jeux ou autres</central><br />
+    <central>obtenues grâce à la modification, est-ce que c'est possible ?</h4>
+    </central><br />
+    <central>➤ Pour les jeu, possible. Pour le reste, je ne sais pas</central><br />
+    <central>
+        <h4>Les interactions avec les console qui ne sont pas hackées sont possible ?</h4>
+    </central><br />
+    <central>➤ Tout à fait, jeux, autres. Tout est fonctionnel</central><br />
+    <central>
+        <h4>Où pourai-je trouver des applications de type Homebrew ?</h4>
+    </central><br />
+    <central>➤ Il y a de multitudes d'options, mais la plus simple</central><br />
+    <central>est de se rendre sur l'homebrew appstore</central><br />
+</body>
+<script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
 </html>
